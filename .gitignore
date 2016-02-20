@@ -1,7 +1,7 @@
 # Codeiniter file
 ## file caches
-application/cache/sass-cache*/
-application/assets/haml*
+**/application/cache/sass-cache/
+**/application/assets/haml
 
 # Windows image file caches
 Thumbs.db
