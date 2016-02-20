@@ -2,7 +2,6 @@
 ## file caches
 **/application/cache/sass-cache/
 **/application/assets/haml/
-**/assets/css/
 
 # Windows image file caches
 Thumbs.db
