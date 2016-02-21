@@ -67,8 +67,6 @@ class Migration_Add_mas_mp extends CI_Migration {
 				'type' => 'INT',
 				'constraint' => '11',
 				'unsigned' => TRUE,
-				'reference' => TRUE,
-				'TABLE' => 'mas_lu',
 				'null' => TRUE
 			),
 			'UM_Id_BU' => array(

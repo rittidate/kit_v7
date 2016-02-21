@@ -150,8 +150,6 @@ class CI_DB_mysql_forge extends CI_DB_forge {
 		}
 
 		$sql .= $this->db->protect_identifiers($table).' ('.$this->_process_fields($fields);
-		
-		var_dump($fields);
 
 		if (count($primary_keys) > 0)
 		{
