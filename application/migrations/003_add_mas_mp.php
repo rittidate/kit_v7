@@ -63,6 +63,7 @@ class Migration_Add_mas_mp extends CI_Migration {
 				'unsigned' => TRUE,
 				'null' => TRUE
 			),
+			// Foreign key from mas_lu
 			'UM_Id_SU' => array(
 				'type' => 'INT',
 				'constraint' => '11',
@@ -173,6 +174,8 @@ class Migration_Add_mas_mp extends CI_Migration {
 		));
 		$this->dbforge->add_key('id', TRUE);
 		$this->dbforge->create_table('mas_mp');
+
+		$this->db->query("ALTER TABLE `mas_mp` ADD UNIQUE(`MPCode`)");
 	}
 	
 	public function down()
