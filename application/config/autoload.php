@@ -90,7 +90,7 @@ $autoload['libraries'] = array('session', 'minify');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'asset');
+$autoload['helper'] = array('url', 'asset', 'date');
 
 
 /*

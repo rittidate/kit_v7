@@ -97,105 +97,104 @@ class Migration_Add_mas_lu extends CI_Migration {
 		));
 		$this->dbforge->add_key('id', TRUE);
 		$this->dbforge->create_table('mas_lu');
-
 		// Dumping data for table 'users_groups'
-		$data = array(
+		$now = date('Y-m-d H:i:s');
+		$data =array(
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 1000',
 				'EFullName' => 'Bank 1000',
 				'ADecimal1' => '1000.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 500',
 				'EFullName' => 'Bank 500',
 				'ADecimal1' => '500.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 100',
 				'EFullName' => 'Bank 100',
 				'ADecimal1' => '100.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 50',
 				'EFullName' => 'Bank 50',
 				'ADecimal1' => '50.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 20',
 				'EFullName' => 'Bank 20',
 				'ADecimal1' => '20.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'ธนบัตรใบละ 10',
 				'EFullName' => 'Bank 10',
 				'ADecimal1' => '10.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 10',
 				'EFullName' => 'Coin 10',
 				'ADecimal1' => '10.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 5',
 				'EFullName' => 'Coin 5',
 				'ADecimal1' => '5.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 2',
 				'EFullName' => 'Coin 2',
 				'ADecimal1' => '2.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
-
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 1',
 				'EFullName' => 'Coin 1',
 				'ADecimal1' => '1.0000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 50 สต.',
 				'EFullName' => 'Coin 50 st.',
 				'ADecimal1' => '0.5000',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8002',
 				'TFullName' => 'เหรียญ 25 สต.',
 				'EFullName' => 'Coin 25 st.',
 				'ADecimal1' => '0.2500',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			//credit card type
 			array(
@@ -205,8 +204,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'วีซ่า',
 				'ELUName' => 'VISA',
 				'EFullName' => 'Visa',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8001',
@@ -215,8 +214,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'มาสเตอร์ การ์ด',
 				'ELUName' => 'MASTER',
 				'EFullName' => 'Master Card',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8001',
@@ -225,8 +224,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'อเมริกัน เอกซ์เพรช',
 				'ELUName' => 'AMEX',
 				'EFullName' => 'American Express',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8001',
@@ -235,8 +234,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'ดินเนอร์ คลับ',
 				'ELUName' => 'DINER',
 				'EFullName' => 'Dinners Club',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8001',
@@ -245,8 +244,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'เจซีบี',
 				'ELUName' => 'JCB',
 				'EFullName' => 'JCB',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),	
 			array(
 				'LUType' => '8001',
@@ -255,8 +254,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'TFullName' => 'ไทยสมาร์ทการ์ด',
 				'ELUName' => 'TSC',
 				'EFullName' => 'Thai Smart Card',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			//unit
 			array(
@@ -266,8 +265,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pcs',
 				'EFullName' => 'Pieces',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -276,8 +275,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Set',
 				'EFullName' => 'Set',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -286,8 +285,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Time',
 				'EFullName' => 'Time',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -296,8 +295,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pcs',
 				'EFullName' => 'Pieces',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -306,8 +305,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pair',
 				'EFullName' => 'Pair',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -316,8 +315,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Doz',
 				'EFullName' => 'Dozen',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -326,8 +325,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Gros.',
 				'EFullName' => 'Gross',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -336,8 +335,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Ream',
 				'EFullName' => 'Ream',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -346,8 +345,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pkg',
 				'EFullName' => 'Package',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -356,8 +355,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Box',
 				'EFullName' => 'Box',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -366,8 +365,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Case',
 				'EFullName' => 'Case',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -376,8 +375,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Book',
 				'EFullName' => 'Book',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -386,8 +385,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Bot',
 				'EFullName' => 'Bottle',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -396,8 +395,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Cab',
 				'EFullName' => 'Cabinet',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -406,8 +405,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Can',
 				'EFullName' => 'Can',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -416,8 +415,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Cup',
 				'EFullName' => 'Cup',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -426,8 +425,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Set',
 				'EFullName' => 'Set',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -436,8 +435,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pcs',
 				'EFullName' => 'Pieces',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -446,8 +445,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pcs',
 				'EFullName' => 'Pieces',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -456,8 +455,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pack',
 				'EFullName' => 'Pack',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -466,8 +465,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Pcs',
 				'EFullName' => 'Pieces',
 				'SubType' => '0',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -476,8 +475,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'cm',
 				'EFullName' => 'Centimetre',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -486,8 +485,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'in',
 				'EFullName' => 'Inch',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -496,8 +495,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'ft',
 				'EFullName' => 'Foot',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -506,8 +505,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'yd',
 				'EFullName' => 'Yard',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -516,8 +515,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'm',
 				'EFullName' => 'Metre',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -526,8 +525,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'km',
 				'EFullName' => 'Kilometre',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -536,8 +535,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'mile',
 				'EFullName' => 'Mile',
 				'SubType' => '1',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -546,8 +545,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'mg',
 				'EFullName' => 'Milligram',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -556,8 +555,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'g',
 				'EFullName' => 'Gram',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -566,8 +565,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'kg',
 				'EFullName' => 'Kilogram',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -576,8 +575,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Ton',
 				'EFullName' => 'Ton',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -586,8 +585,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'pd',
 				'EFullName' => 'Pound',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -596,8 +595,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'on',
 				'EFullName' => 'Ounce',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -606,8 +605,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'ml',
 				'EFullName' => 'Millilitre',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -616,8 +615,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'L',
 				'EFullName' => 'Litre',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -626,8 +625,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Tank',
 				'EFullName' => 'Tank',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -636,8 +635,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Bag',
 				'EFullName' => 'Bag',
 				'SubType' => '2',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -646,8 +645,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'sqkm',
 				'EFullName' => 'Square Kilometre',
 				'SubType' => '3',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -656,8 +655,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'sqm',
 				'EFullName' => 'Square Metre',
 				'SubType' => '3',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -666,8 +665,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'sqcm',
 				'EFullName' => 'Square Centimetre',
 				'SubType' => '3',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -676,8 +675,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'hr',
 				'EFullName' => 'Hour',
 				'SubType' => '4',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -686,8 +685,8 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'min',
 				'EFullName' => 'Minute',
 				'SubType' => '4',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '5003',
@@ -696,53 +695,55 @@ class Migration_Add_mas_lu extends CI_Migration {
 				'ELUName' => 'Day',
 				'EFullName' => 'Day',
 				'SubType' => '4',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8101',
 				'TFullName' => 'สินค้าบกพร่อง',
 				'EFullName' => 'Damage',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8101',
 				'TFullName' => 'สินค้าใกล้หมดอายุ',
 				'EFullName' => 'Nearly Expire',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),	
 			array(
 				'LUType' => '8102',
 				'TFullName' => 'รายการสินค้าไม่ถูกต้อง',
 				'EFullName' => 'Incorrect Item',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '8102',
 				'TFullName' => 'บิลมีความบกพร่อง',
 				'EFullName' => 'Receipt an error',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '9001',
 				'TFullName' => 'เงินสด',
 				'EFullName' => 'Cash',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
+				'CreateDt' => $now,
+				'UpdateDt' => $now
 			),
 			array(
 				'LUType' => '9001',
 				'TFullName' => 'เครดิตการ์ด',
 				'EFullName' => 'Credit card',
-				'CreateDt' => NOW(),
-				'UpdateDt' => NOW()
-			),
+				'CreateDt' => $now,
+				'UpdateDt' => $now
+			)
 		);
-		$this->db->insert_batch('mas_lu', $data);
+		foreach ($data as $d){
+			$this->db->insert('mas_lu', $d);
+		}
 	}
 	
 	public function down()
