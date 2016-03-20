@@ -96,6 +96,8 @@ class CI_DB_mysql_forge extends CI_DB_forge {
 						switch (strtolower($attributes['TYPE']))
 						{
 							case 'decimal':
+								$sql .= '('.$attributes['CONSTRAINT'].')';
+								break;
 							case 'float':
 							case 'numeric':
 								$sql .= '('.implode(',', $attributes['CONSTRAINT']).')';

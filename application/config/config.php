@@ -39,8 +39,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://sbobet.local/';
-//$config['base_url']	= 'http://test.kittivate.com/';
+$config['base_url']	= 'http://kitv7.local';
+//$config['base_url']	= 'http://trail.kittivate.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -369,7 +369,7 @@ $config['compress_output'] = FALSE;
 | regarding date handling.
 |
 */
-$config['time_reference'] = 'local';
+$config['time_reference'] = 'UP7';
 
 
 /*
