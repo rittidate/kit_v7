@@ -95,11 +95,6 @@ class Migration_Install_ion_auth extends CI_Migration {
 				'constraint' => '40',
 				'null' => TRUE
 			),
-			'created_on' => array(
-				'type' => 'INT',
-				'constraint' => '11',
-				'unsigned' => TRUE,
-			),
 			'last_login' => array(
 				'type' => 'INT',
 				'constraint' => '11',
@@ -131,8 +126,17 @@ class Migration_Install_ion_auth extends CI_Migration {
 				'type' => 'VARCHAR',
 				'constraint' => '20',
 				'null' => TRUE
+			),
+			'created_on' => array(
+				'type' => 'INT',
+				'constraint' => '11',
+				'unsigned' => TRUE,
+			),
+			'updated_on' => array(
+				'type' => 'INT',
+				'constraint' => '11',
+				'unsigned' => TRUE,
 			)
-
 		));
 		$this->dbforge->add_key('id', TRUE);
 		$this->dbforge->create_table('users');
